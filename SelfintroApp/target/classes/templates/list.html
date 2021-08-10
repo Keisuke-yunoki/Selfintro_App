@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -30,35 +30,15 @@
 				</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr th:each="Appdata : ${AppdataList}">
 						<th scope="row">1</th>
-							<td>年</td>
-							<td>月</td>
-							<td>年齢</td>
-							<td>職業</td>
-							<td>説明</td>
-							<td>備考</td>
-							<td>編集・削除</td>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-							<td>年</td>
-							<td>月</td>
-							<td>年齢</td>
-							<td>職業</td>
-							<td>説明</td>
-							<td>備考</td>
-							<td>編集・削除</td>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-							<td>年</td>
-							<td>月</td>
-							<td>年齢</td>
-							<td>職業</td>
-							<td>説明</td>
-							<td>備考</td>
-							<td>編集・削除</td>
+							<td th:text="${Appdata.id}"></td>
+							<td th:text="${Appdata.year}"></td>
+							<td th:text="${Appdata.month}"></td>
+							<td th:text="${Appdata.age}"></td>
+							<td th:text="${Appdata.profession}"></td>
+							<td th:text="${Appdata.description}"></td>
+							<td th:text="${Appdata.remarks}"></td>
 					</tr>		
 				</tbody>
 			</table>
