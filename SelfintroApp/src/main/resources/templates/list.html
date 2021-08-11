@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -16,7 +16,7 @@
 			<div class="col-sm">
 			<div></div>
 			<h1>自己紹介アプリ　一覧画面</h1>
-			<table class="table">
+			<table class="table table-bordered">
 				<thead>
 				<tr>
 					<th scope="col">id</th>
@@ -30,35 +30,22 @@
 				</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<th scope="row">1</th>
-							<td>年</td>
-							<td>月</td>
-							<td>年齢</td>
-							<td>職業</td>
-							<td>説明</td>
-							<td>備考</td>
-							<td>編集・削除</td>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-							<td>年</td>
-							<td>月</td>
-							<td>年齢</td>
-							<td>職業</td>
-							<td>説明</td>
-							<td>備考</td>
-							<td>編集・削除</td>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-							<td>年</td>
-							<td>月</td>
-							<td>年齢</td>
-							<td>職業</td>
-							<td>説明</td>
-							<td>備考</td>
-							<td>編集・削除</td>
+					<tr th:each="appdata : ${appdataList}">
+						<th scope="row" th:text="${appdata.id}"></th>
+							<td th:text="${appdata.year}"></td>
+							<td th:text="${appdata.month}"></td>
+							<td th:text="${appdata.age}"></td>
+							<td th:text="${appdata.profession}"></td>
+							<td th:text="${appdata.description}"></td>
+							<td th:text="${appdata.remarks}"></td>
+							<td>
+								<a class="btn btn-primary" th:href="@{'/list/edit/' + ${appdata.id}}" role="button">編集</a>
+								<a class="btn btn-primary">削除</a>
+								<!--th:href="@{/list}" th:method="post"
+								<form th:action="@{/list}" th:method="post">
+						    		<input type="submit"class="btn btn-danger" name="delete" value="削除">
+								</form> -->
+							</td>
 					</tr>		
 				</tbody>
 			</table>
