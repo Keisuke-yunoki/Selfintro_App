@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:53306/selfintroapp
+    username: USER05
+    password: USER05
+    driver-class-name: com.mysql.cj.jdbc.Driver   
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:schema.sql
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
+    
+server:
+    port: 58080
