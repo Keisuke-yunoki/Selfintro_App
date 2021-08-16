@@ -14,9 +14,9 @@ import com.example.selfintroapp.mapper.SelfintroAppMapper;
 public class SelfintroAppService {
 	
 	@Autowired
-	SelfintroAppMapper mapper;
+	private SelfintroAppMapper mapper;
 	
-	
+	@Transactional
 	public List<Appdata>findAll(){
 		return mapper.findAll();
 	}
@@ -24,6 +24,18 @@ public class SelfintroAppService {
 	@Transactional
 	public Appdata findOne(Integer id) {
 		return mapper.findOne(id);
+	}
+	
+	@Transactional
+	public void update(Appdata appdata) {
+		mapper.update(appdata);
+		
+	}
+
+	public void delete(Integer id) {
+		mapper.delete(id);
+		
+		
 	}
 
 }

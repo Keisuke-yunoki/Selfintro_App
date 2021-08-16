@@ -10,16 +10,16 @@ public class Appdata {
 	private String description;	// 説明
 	private String remarks;		// 備考
 
-	public Appdata(Integer id, Integer year, Integer month, Integer age, String profession, String description, String remarks) {
-		this.id = id;
-		this.year = year;
-		this.month = month;
-		this.age = age;
-		this.profession = profession;
-		this.description = description;
-		this.remarks = remarks;
+//	public Appdata(Integer id, Integer year, Integer month, Integer age, String profession, String description, String remarks) {
+//		this.id = id;
+//		this.year = year;
+//		this.month = month;
+//		this.age = age;
+//		this.profession = profession;
+//		this.description = description;
+//		this.remarks = remarks;
 
-	}
+//	}
 
 	/**
 	 * アプリデータIDを取得する

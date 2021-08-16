@@ -7,8 +7,6 @@ import org.apache.ibatis.annotations.Mapper;
 import com.example.selfintroapp.domain.Appdata;
 
 
-
-
 @Mapper
 public interface SelfintroAppMapper {
 
@@ -17,13 +15,16 @@ public interface SelfintroAppMapper {
 	*	@return アプリデータリスト
 	*/
 	List<Appdata>findAll();
-	
 	/**
 	 * 
 	 * 	アプリデータを一部検索する。
 	 * 	@return
 	 */
 	Appdata findOne(int id);
+	
+	void update(Appdata appdata);
+	
+	void delete(Integer id);
 	
 	
 }

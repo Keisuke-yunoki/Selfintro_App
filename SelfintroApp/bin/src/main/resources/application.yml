@@ -12,9 +12,5 @@ spring:
   thymeleaf:
     prefix: file:src/main/resources/templates/
     
-
-spring.mvc.hiddenmethod.filter.enabled: true
-
-    
 server:
     port: 58080
