@@ -12,42 +12,41 @@
   </head>
   <body>
   <div class="container">
-    <h1>自己紹介アプリ　編集画面</h1>
-        <form th:action="@{/appdatas/{id}(id=*{id})}" th:method="put" th:object="${appdata}">
-          <div class="mb-3">
+    <h1>自己紹介アプリ　新規登録画面</h1>
+	  <br></br>
+        <form th:action="@{/appdatas}" th:method="get" th:object="${appdata}">
+        <div class="mb-3">
             <label for="id" class="form-label">id</label>
-            <input type="text" class="form-control" name="id" th:field="*{id}" />
+            <input type="text" class="form-control" name="id"/>
           </div>
           <div class="mb-3">
             <label for="year" class="form-label">年</label>
-            <input type="text" class="form-control" name="year" th:field="*{year}" />
+            <input type="text" class="form-control" name="year"/>
           </div>
           <div class="mb-3">
             <label for="month" class="form-label">月</label>
-            <input type="text" class="form-control" name="month" th:field="*{month}" />
+            <input type="text" class="form-control" name="month"/>
           </div>
           <div class="mb-3">
             <label for="age" class="form-label">年齢</label>
-            <input type="text" class="form-control" name="age" th:field="*{age}" />
+            <input type="text" class="form-control" name="age"/>
           </div>
           <div class="mb-3">
             <label for="profession" class="form-label">職業</label>
-            <input type="text" class="form-control" name="profession" th:field="*{profession}" />
+            <input type="text" class="form-control" name="profession"/>
           </div>
           <div class="mb-3">
             <label for="description" class="form-label">説明</label>
-            <input type="text" class="form-control" name="description" th:field="*{description}" />
+            <input type="text" class="form-control" name="description"/>
           </div>
           <div class="mb-3">
             <label for="remarks" class="form-label">備考</label>
-            <input type="text" class="form-control" name="remarks" th:field="*{remarks}" />
-          </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button class="btn btn-primary me-md-2">更新</button>
-            <a class="btn btn-danger" href="/appdatas" role="button">キャンセル</a>
-          </div>
-        </form>
-    </div>
+            <input type="text" class="form-control" name="remarks"/>
+          
+        </div>
+        	<button class="btn btn-primary">登録</button>
+		</form>
+	  </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

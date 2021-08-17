@@ -25,11 +25,19 @@ public class SelfintroAppController {
 	@GetMapping
 	public String index(Model model) {
 
-// 一覧画面表示！！Service→Controllerへ
+		// 一覧画面表示！！Service→Controllerへ
 		model.addAttribute("appdatas", service.findAll());		
 		// list.htmlの表示
 		return "appdatas/index";		
 	}
+	
+	// 新規作成
+	@GetMapping("new")
+	public String newAppdata() {
+		return "appdatas/new";
+		
+	}
+	
 	
 	// 編集画面の表示 
 	@GetMapping("edit/{id}")
@@ -41,6 +49,9 @@ public class SelfintroAppController {
 		return "appdatas/edit";
 	}
 	
+	
+	
+	
 	// 更新
 	@PutMapping("{id}")
 	public String update(@PathVariable Integer id, @ModelAttribute Appdata appdata) {
@@ -49,6 +60,7 @@ public class SelfintroAppController {
 		return "redirect:/appdatas";
 		
 	}
+	// 削除
 	@DeleteMapping("{id}")
 	public String destroy(@PathVariable Integer id) {
 		service.delete(id);
