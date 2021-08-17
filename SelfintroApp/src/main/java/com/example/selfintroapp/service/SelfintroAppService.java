@@ -31,11 +31,15 @@ public class SelfintroAppService {
 		mapper.update(appdata);
 		
 	}
-
+	
+	@Transactional
 	public void delete(Integer id) {
 		mapper.delete(id);
-		
-		
+	}
+	
+	@Transactional
+	public void save(Appdata appdata) {
+		mapper.save(appdata);
 	}
 
 }

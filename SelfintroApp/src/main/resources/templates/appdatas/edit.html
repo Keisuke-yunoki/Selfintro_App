@@ -13,49 +13,41 @@
   <body>
   <div class="container">
     <h1>自己紹介アプリ　編集画面</h1>
-	  <br></br>
         <form th:action="@{/appdatas/{id}(id=*{id})}" th:method="put" th:object="${appdata}">
-        <div class="col-12">
-        	<th scope="col">id</th>
-		    <input type="text" name="id" th:field="*{id}" />
-        </div>
-        <br></br>
-        <div class="col-12">
-        	<th scope="col">年</th>
-        	<input type="text" name="year" th:field="*{year}" />
-        	<br></br>
-        </div>
-        <div class="col-12">
-        	<th scope="col">月</th>
-        	<input type="text" name="month" th:field="*{month}" />
-        	<br></br>
-        </div>
-        <div class="col-12">
-        	<th scope="col">年齢</th>
-        	<input type="text" name="age" th:field="*{age}" />
-			<br></br>
-        </div>
-        <div class="col-12">
-			<th scope="col">職業</th>
-			<input type="text" name="profession" th:field="*{profession}" />
-
-			<br></br>
-        </div>
-        <div class="col-12">
-			<th scope="col">説明</th>
-			<input type="text" name="description" th:field="*{description}" />
-			<br></br>
-        </div>
-        <div class="col-12">
-			<th scope="col">備考</th>
-			<input type="text" name="remarks" th:field="*{remarks}" />
-			<br></br>
-        </div>
-        	<a class="btn btn-primary" role="button">更新</a>
-        <br></br>
-			<a class="btn btn-primary" type="submit" role="button">一覧</a>
-		</form>
-	  </div>
+          <div class="mb-3">
+            <label for="id" class="form-label">id</label>
+            <input type="text" class="form-control" name="id" th:field="*{id}" />
+          </div>
+          <div class="mb-3">
+            <label for="year" class="form-label">年</label>
+            <input type="text" class="form-control" name="year" th:field="*{year}" />
+          </div>
+          <div class="mb-3">
+            <label for="month" class="form-label">月</label>
+            <input type="text" class="form-control" name="month" th:field="*{month}" />
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label">年齢</label>
+            <input type="text" class="form-control" name="age" th:field="*{age}" />
+          </div>
+          <div class="mb-3">
+            <label for="profession" class="form-label">職業</label>
+            <input type="text" class="form-control" name="profession" th:field="*{profession}" />
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">説明</label>
+            <input type="text" class="form-control" name="description" th:field="*{description}" />
+          </div>
+          <div class="mb-3">
+            <label for="remarks" class="form-label">備考</label>
+            <input type="text" class="form-control" name="remarks" th:field="*{remarks}" />
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button class="btn btn-primary me-md-2">更新</button>
+            <a class="btn btn-danger" href="/appdatas" role="button">キャンセル</a>
+          </div>
+        </form>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

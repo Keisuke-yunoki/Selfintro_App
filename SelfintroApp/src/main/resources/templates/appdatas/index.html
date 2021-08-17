@@ -7,29 +7,33 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
 		<title>自己紹介アプリ　一覧画面</title>
 	</head>
 	<body>
 	<div class="container">
+	
 		<div class="row">
-			<div class="col-sm">
-			<div></div>
-			<h1>自己紹介アプリ　一覧画面</h1>
-			<table class="table table-bordered">
-				<thead>
-				<tr>
-					<th scope="col">id</th>
-					<th scope="col">年</th>
-					<th scope="col">月</th>
-					<th scope="col">年齢</th>
-					<th scope="col">職業</th>
-					<th scope="col">説明</th>
-					<th scope="col">備考</th>
-					<th scope="col">編集・削除</th>
-				</tr>
-				</thead>
-				<tbody>
+			<div class="col">
+				<div></div>
+				<h1>自己紹介アプリ　一覧画面</h1>
+				<div class="text-end">
+					<a class="btn btn-dark" th:href="@{/appdatas/new}" role="button">新規登録</a>
+				</div>
+				<br>		
+				<table class="table table-bordered">
+					<thead>
+					<tr>
+						<th scope="col">id</th>
+						<th scope="col">年</th>
+						<th scope="col">月</th>
+						<th scope="col">年齢</th>
+						<th scope="col">職業</th>
+						<th scope="col">説明</th>
+						<th scope="col">備考</th>
+						<th scope="col">編集・削除</th>
+					</tr>
+					</thead>
+					<tbody>
 					<tr th:each="appdata : ${appdatas}" th:object="${appdata}">
 						<th th:text="*{id}"></th>
 						<td th:text="*{year}"></td>
@@ -39,18 +43,15 @@
 						<td th:text="*{description}"></td>
 						<td th:text="*{remarks}"></td>
 						<td>
-								<a class="btn btn-primary" th:href="@{/appdatas/edit/(id=*{id})}" role="button">編集</a>
-								
-								
-								<a class="btn btn-primary" >削除</a>
-								
+								<a class="btn btn-primary" th:href="@{/appdatas/edit/{id}(id=*{id})}" role="button">編集</a>
+																								
 								<form th:action="@{/appdatas/{id}(id=*{id})}" th:method="delete">
 						    		<input type="submit"class="btn btn-danger" name="delete" value="削除">
 								</form>
 							</td>
 					</tr>		
-				</tbody>
-			</table>
+					</tbody>
+				</table>
 			</div>	
 		</div>
 	</div>

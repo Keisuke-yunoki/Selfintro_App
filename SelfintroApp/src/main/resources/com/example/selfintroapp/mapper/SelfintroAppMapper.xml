@@ -43,6 +43,25 @@
     WHERE id = #{id}
     </update>
     
+   <insert id="save" useGeneratedKeys="true" keyProperty="id">
+     INSERT INTO selfintroapp (
+        id
+       , year
+       , month
+       , age
+       , profession
+       , description
+       , remarks) 
+     VALUES (
+        #{id}
+        , #{year}
+        , #{month}
+        , #{age}
+        , #{profession}
+        , #{description}
+        , #{remarks})
+    </insert>
+        
     <delete id="delete">
      DELETE 
      FROM
