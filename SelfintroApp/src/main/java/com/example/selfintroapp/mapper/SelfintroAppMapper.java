@@ -26,5 +26,7 @@ public interface SelfintroAppMapper {
 	
 	void delete(Integer id);
 	
+	void save(Appdata appdata);
+	
 	
 }
