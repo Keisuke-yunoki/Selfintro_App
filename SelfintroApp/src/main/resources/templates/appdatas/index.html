@@ -39,11 +39,8 @@
 						<td th:text="*{description}"></td>
 						<td th:text="*{remarks}"></td>
 						<td>
-								<a class="btn btn-primary" th:href="@{/appdatas/edit/(id=*{id})}" role="button">編集</a>
-								
-								
-								<a class="btn btn-primary" >削除</a>
-								
+								<a class="btn btn-primary" th:href="@{/appdatas/edit/{id}(id=*{id})}" role="button">編集</a>
+																								
 								<form th:action="@{/appdatas/{id}(id=*{id})}" th:method="delete">
 						    		<input type="submit"class="btn btn-danger" name="delete" value="削除">
 								</form>

@@ -31,7 +31,8 @@ public class SelfintroAppService {
 		mapper.update(appdata);
 		
 	}
-
+	
+	@Transactional
 	public void delete(Integer id) {
 		mapper.delete(id);
 		
