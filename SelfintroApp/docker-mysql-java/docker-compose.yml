@@ -15,5 +15,5 @@ services:
       MYSQL_PASSWORD: pass4649
       TZ: Asia/Tokyo
     ports:
-      - 53306:3306
+        3306
     hostname: selfintroapp
