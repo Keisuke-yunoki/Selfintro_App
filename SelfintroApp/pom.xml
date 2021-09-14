@@ -62,7 +62,6 @@
       <artifactId>spring-cloud-starter-aws-jdbc</artifactId>
       <version>2.2.6.RELEASE</version>
     </dependency>
-
   </dependencies>
   <build>
     <pluginManagement>
@@ -78,8 +77,15 @@
           <configuration>
               <mainClass>com.example.selfintroapp.SelfintroAppApplication</mainClass>
           </configuration>
-          </plugin>
-      </plugins>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.5.1</version>
+        </plugin>
+        
+       </plugins>
     </pluginManagement>
   </build>
 
