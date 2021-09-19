@@ -26,7 +26,7 @@ cloud:
 spring.mvc.hiddenmethod.filter.enabled: true
 mybatis:
   mapper-locations: 
-      - classpath:/com/example/selfintroapp/mapper/SelfintroAppMapper.xml
+      - classpath*:/src/main/resources/com/example/selfintroapp/mapper/SelfintroAppMapper.xml
 
 server:
     port: 58080
