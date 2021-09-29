@@ -4,7 +4,7 @@ spring:
     url: jdbc:mysql://db-java-portfolio-01.c9g8ky3xvz4n.ap-northeast-1.rds.amazonaws.com:3306/selfintroapp
     username: admin
     password: Pass4649
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver  
     
   sql:
     init:
@@ -12,20 +12,11 @@ spring:
       schema-locations: classpath:schema.sql
   thymeleaf:
     prefix: file:src/main/resources/templates/
-cloud:
-  aws:
-    stack:
-      # CloudFormationのスタック名を自動取得しない
-      auto: false
-    region:
-      # リージョン名を自動取得しない
-      auto: false
-      # リージョン名（例. ap-northeast-1）
-      static: ap-northeast-1      
+
 
 spring.mvc.hiddenmethod.filter.enabled: true
 mybatis:
- mapper-locations: classpath*:SelfintroAppMapper.xml
+  mapper-locations: classpath*:/src/main/resources/com/example/selfintroapp/mapper/SelfintroAppMapper.xml
 
 server:
     port: 58080
