@@ -15,7 +15,7 @@
   <packaging>jar</packaging>
   <description>Portfolio project for Spring Boot</description>
   <properties>
-    <java.version>11.0.12</java.version>
+    <java.version>11</java.version>
   </properties>
   <dependencies>
     <dependency>
@@ -41,11 +41,13 @@
       <artifactId>mysql-connector-java</artifactId>
       <scope>runtime</scope>
     </dependency>
+    
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>io.takari</groupId>
       <artifactId>maven-wrapper</artifactId>
@@ -63,12 +65,13 @@
       <artifactId>spring-cloud-starter-aws-jdbc</artifactId>
       <version>2.2.6.RELEASE</version>
     </dependency>
-    <dependency>    
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.2.0</version>
-      <type>maven-plugin</type>
-    </dependency>    
+    
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+    <dependency>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-compiler-plugin</artifactId>
+       <version>3.8.1</version>
+    </dependency>        
   </dependencies>
   <build>
     <pluginManagement>
@@ -84,6 +87,27 @@
           <configuration>
               <mainClass>com.example.selfintroapp.SelfintroAppApplication</mainClass>
           </configuration>
+        </plugin>
+            <!--Maven Plugin -->
+             
+           
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+           <configuration>
+              <maven.compiler.source>11.0.12</maven.compiler.source>
+              <maven.compiler.target>11.0.12</maven.compiler.target>
+           </configuration>
+        </plugin>
+        
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.22.1</version>
+            <configuration>
+              <useSystemClassLoader>false</useSystemClassLoader>
+            </configuration>
         </plugin>
 
        </plugins>
