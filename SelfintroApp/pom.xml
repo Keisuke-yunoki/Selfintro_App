@@ -115,7 +115,7 @@
             <appendAssemblyId>false</appendAssemblyId>
             <archive>
               <manifest>
-                <mainClass>com.example.selfintroapp</mainClass>
+                <mainClass>com.example.selfintroapp.SelfintroAppApplication.java</mainClass>
               </manifest>
             </archive>
           </configuration>
