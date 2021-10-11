@@ -1,6 +1,350 @@
 Manifest-Version: 1.0
 Build-Jdk-Spec: 16
+Class-Path: lib/spring-boot-starter-thymeleaf-2.5.3.jar lib/spring-boot-
+ starter-2.5.3.jar lib/spring-boot-starter-logging-2.5.3.jar lib/logback
+ -classic-1.2.4.jar lib/logback-core-1.2.4.jar lib/log4j-to-slf4j-2.14.1
+ .jar lib/log4j-api-2.14.1.jar lib/jul-to-slf4j-1.7.32.jar lib/jakarta.a
+ nnotation-api-1.3.5.jar lib/snakeyaml-1.28.jar lib/thymeleaf-spring5-3.
+ 0.12.RELEASE.jar lib/thymeleaf-3.0.12.RELEASE.jar lib/attoparser-2.0.5.
+ RELEASE.jar lib/unbescape-1.1.6.RELEASE.jar lib/thymeleaf-extras-java8t
+ ime-3.0.4.RELEASE.jar lib/spring-boot-starter-web-2.5.3.jar lib/spring-
+ boot-starter-json-2.5.3.jar lib/jackson-databind-2.12.4.jar lib/jackson
+ -annotations-2.12.4.jar lib/jackson-core-2.12.4.jar lib/jackson-datatyp
+ e-jdk8-2.12.4.jar lib/jackson-datatype-jsr310-2.12.4.jar lib/jackson-mo
+ dule-parameter-names-2.12.4.jar lib/spring-boot-starter-tomcat-2.5.3.ja
+ r lib/tomcat-embed-core-9.0.50.jar lib/tomcat-embed-el-9.0.50.jar lib/t
+ omcat-embed-websocket-9.0.50.jar lib/spring-web-5.3.9.jar lib/spring-be
+ ans-5.3.9.jar lib/spring-webmvc-5.3.9.jar lib/spring-aop-5.3.9.jar lib/
+ spring-context-5.3.9.jar lib/spring-expression-5.3.9.jar lib/mybatis-sp
+ ring-boot-starter-2.2.0.jar lib/spring-boot-starter-jdbc-2.5.3.jar lib/
+ HikariCP-4.0.3.jar lib/spring-jdbc-5.3.9.jar lib/spring-tx-5.3.9.jar li
+ b/mybatis-spring-boot-autoconfigure-2.2.0.jar lib/mybatis-3.5.7.jar lib
+ /mybatis-spring-2.0.6.jar lib/spring-boot-devtools-2.5.3.jar lib/spring
+ -boot-2.5.3.jar lib/spring-boot-autoconfigure-2.5.3.jar lib/mysql-conne
+ ctor-java-8.0.26.jar lib/spring-core-5.3.9.jar lib/spring-jcl-5.3.9.jar
+  lib/maven-wrapper-0.4.0.jar lib/spring-cloud-starter-aws-2.2.6.RELEASE
+ .jar lib/spring-cloud-aws-context-2.2.6.RELEASE.jar lib/spring-cloud-aw
+ s-core-2.2.6.RELEASE.jar lib/aws-java-sdk-core-1.11.792.jar lib/httpcli
+ ent-4.5.13.jar lib/httpcore-4.4.14.jar lib/commons-codec-1.15.jar lib/i
+ on-java-1.0.2.jar lib/jackson-dataformat-cbor-2.12.4.jar lib/joda-time-
+ 2.8.1.jar lib/aws-java-sdk-s3-1.11.792.jar lib/aws-java-sdk-kms-1.11.79
+ 2.jar lib/aws-java-sdk-ec2-1.11.792.jar lib/aws-java-sdk-cloudformation
+ -1.11.792.jar lib/spring-cloud-aws-autoconfigure-2.2.6.RELEASE.jar lib/
+ slf4j-api-1.7.32.jar lib/javax.activation-api-1.2.0.jar lib/spring-clou
+ d-starter-aws-jdbc-2.2.6.RELEASE.jar lib/spring-cloud-aws-jdbc-2.2.6.RE
+ LEASE.jar lib/tomcat-jdbc-9.0.50.jar lib/tomcat-juli-9.0.50.jar lib/aws
+ -java-sdk-rds-1.11.792.jar lib/jmespath-java-1.11.792.jar lib/aws-java-
+ sdk-iam-1.11.792.jar lib/maven-compiler-plugin-3.8.1.jar lib/maven-plug
+ in-api-3.0.jar lib/maven-model-3.0.jar lib/sisu-inject-plexus-1.4.2.jar
+  lib/sisu-inject-bean-1.4.2.jar lib/sisu-guice-2.1.7-noaop.jar lib/mave
+ n-artifact-3.0.jar lib/plexus-utils-2.0.4.jar lib/maven-core-3.0.jar li
+ b/maven-settings-3.0.jar lib/maven-settings-builder-3.0.jar lib/maven-r
+ epository-metadata-3.0.jar lib/maven-model-builder-3.0.jar lib/maven-ae
+ ther-provider-3.0.jar lib/aether-impl-1.7.jar lib/aether-spi-1.7.jar li
+ b/aether-api-1.7.jar lib/aether-util-1.7.jar lib/plexus-interpolation-1
+ .14.jar lib/plexus-classworlds-2.2.3.jar lib/plexus-component-annotatio
+ ns-1.5.5.jar lib/plexus-sec-dispatcher-1.3.jar lib/plexus-cipher-1.4.ja
+ r lib/maven-shared-utils-3.2.1.jar lib/commons-io-2.5.jar lib/maven-sha
+ red-incremental-1.1.jar lib/plexus-java-0.9.10.jar lib/asm-6.2.jar lib/
+ qdox-2.0-M8.jar lib/plexus-compiler-api-2.8.4.jar lib/plexus-compiler-m
+ anager-2.8.4.jar lib/plexus-compiler-javac-2.8.4.jar
 Implementation-Title: SelfintroApp
 Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: com.example.selfintroapp.SelfintroAppApplication.java
+Extension-List: spring-boot-starter-thymeleaf spring-boot-starter spring
+ -boot-starter-logging logback-classic logback-core log4j-to-slf4j log4j
+ -api jul-to-slf4j jakarta.annotation-api snakeyaml thymeleaf-spring5 th
+ ymeleaf attoparser unbescape thymeleaf-extras-java8time spring-boot-sta
+ rter-web spring-boot-starter-json jackson-databind jackson-annotations 
+ jackson-core jackson-datatype-jdk8 jackson-datatype-jsr310 jackson-modu
+ le-parameter-names spring-boot-starter-tomcat tomcat-embed-core tomcat-
+ embed-el tomcat-embed-websocket spring-web spring-beans spring-webmvc s
+ pring-aop spring-context spring-expression mybatis-spring-boot-starter 
+ spring-boot-starter-jdbc HikariCP spring-jdbc spring-tx mybatis-spring-
+ boot-autoconfigure mybatis mybatis-spring spring-boot-devtools spring-b
+ oot spring-boot-autoconfigure mysql-connector-java spring-core spring-j
+ cl maven-wrapper spring-cloud-starter-aws spring-cloud-aws-context spri
+ ng-cloud-aws-core aws-java-sdk-core httpclient httpcore commons-codec i
+ on-java jackson-dataformat-cbor joda-time aws-java-sdk-s3 aws-java-sdk-
+ kms aws-java-sdk-ec2 aws-java-sdk-cloudformation spring-cloud-aws-autoc
+ onfigure slf4j-api javax.activation-api spring-cloud-starter-aws-jdbc s
+ pring-cloud-aws-jdbc tomcat-jdbc tomcat-juli aws-java-sdk-rds jmespath-
+ java aws-java-sdk-iam maven-compiler-plugin maven-plugin-api maven-mode
+ l sisu-inject-plexus sisu-inject-bean sisu-guice maven-artifact plexus-
+ utils maven-core maven-settings maven-settings-builder maven-repository
+ -metadata maven-model-builder maven-aether-provider aether-impl aether-
+ spi aether-api aether-util plexus-interpolation plexus-classworlds plex
+ us-component-annotations plexus-sec-dispatcher plexus-cipher maven-shar
+ ed-utils commons-io maven-shared-incremental plexus-java asm qdox plexu
+ s-compiler-api plexus-compiler-manager plexus-compiler-javac
+spring-boot-starter-thymeleaf-Extension-Name: spring-boot-starter-thymel
+ eaf
+spring-boot-starter-thymeleaf-Implementation-Version: 2.5.3
+spring-boot-starter-Extension-Name: spring-boot-starter
+spring-boot-starter-Implementation-Version: 2.5.3
+spring-boot-starter-logging-Extension-Name: spring-boot-starter-logging
+spring-boot-starter-logging-Implementation-Version: 2.5.3
+logback-classic-Extension-Name: logback-classic
+logback-classic-Implementation-Version: 1.2.4
+logback-core-Extension-Name: logback-core
+logback-core-Implementation-Version: 1.2.4
+log4j-to-slf4j-Extension-Name: log4j-to-slf4j
+log4j-to-slf4j-Implementation-Version: 2.14.1
+log4j-api-Extension-Name: log4j-api
+log4j-api-Implementation-Version: 2.14.1
+jul-to-slf4j-Extension-Name: jul-to-slf4j
+jul-to-slf4j-Implementation-Version: 1.7.32
+jakarta_annotation-api-Extension-Name: jakarta.annotation-api
+jakarta_annotation-api-Implementation-Version: 1.3.5
+snakeyaml-Extension-Name: snakeyaml
+snakeyaml-Implementation-Version: 1.28
+thymeleaf-spring5-Extension-Name: thymeleaf-spring5
+thymeleaf-spring5-Implementation-Version: 3.0.12.RELEASE
+thymeleaf-Extension-Name: thymeleaf
+thymeleaf-Implementation-Version: 3.0.12.RELEASE
+attoparser-Extension-Name: attoparser
+attoparser-Implementation-Version: 2.0.5.RELEASE
+unbescape-Extension-Name: unbescape
+unbescape-Implementation-Version: 1.1.6.RELEASE
+thymeleaf-extras-java8time-Extension-Name: thymeleaf-extras-java8time
+thymeleaf-extras-java8time-Implementation-Version: 3.0.4.RELEASE
+spring-boot-starter-web-Extension-Name: spring-boot-starter-web
+spring-boot-starter-web-Implementation-Version: 2.5.3
+spring-boot-starter-json-Extension-Name: spring-boot-starter-json
+spring-boot-starter-json-Implementation-Version: 2.5.3
+jackson-databind-Extension-Name: jackson-databind
+jackson-databind-Implementation-Version: 2.12.4
+jackson-annotations-Extension-Name: jackson-annotations
+jackson-annotations-Implementation-Version: 2.12.4
+jackson-core-Extension-Name: jackson-core
+jackson-core-Implementation-Version: 2.12.4
+jackson-datatype-jdk8-Extension-Name: jackson-datatype-jdk8
+jackson-datatype-jdk8-Implementation-Version: 2.12.4
+jackson-datatype-jsr310-Extension-Name: jackson-datatype-jsr310
+jackson-datatype-jsr310-Implementation-Version: 2.12.4
+jackson-module-parameter-names-Extension-Name: jackson-module-parameter-
+ names
+jackson-module-parameter-names-Implementation-Version: 2.12.4
+spring-boot-starter-tomcat-Extension-Name: spring-boot-starter-tomcat
+spring-boot-starter-tomcat-Implementation-Version: 2.5.3
+tomcat-embed-core-Extension-Name: tomcat-embed-core
+tomcat-embed-core-Implementation-Version: 9.0.50
+tomcat-embed-el-Extension-Name: tomcat-embed-el
+tomcat-embed-el-Implementation-Version: 9.0.50
+tomcat-embed-websocket-Extension-Name: tomcat-embed-websocket
+tomcat-embed-websocket-Implementation-Version: 9.0.50
+spring-web-Extension-Name: spring-web
+spring-web-Implementation-Version: 5.3.9
+spring-beans-Extension-Name: spring-beans
+spring-beans-Implementation-Version: 5.3.9
+spring-webmvc-Extension-Name: spring-webmvc
+spring-webmvc-Implementation-Version: 5.3.9
+spring-aop-Extension-Name: spring-aop
+spring-aop-Implementation-Version: 5.3.9
+spring-context-Extension-Name: spring-context
+spring-context-Implementation-Version: 5.3.9
+spring-expression-Extension-Name: spring-expression
+spring-expression-Implementation-Version: 5.3.9
+mybatis-spring-boot-starter-Extension-Name: mybatis-spring-boot-starter
+mybatis-spring-boot-starter-Implementation-Version: 2.2.0
+spring-boot-starter-jdbc-Extension-Name: spring-boot-starter-jdbc
+spring-boot-starter-jdbc-Implementation-Version: 2.5.3
+HikariCP-Extension-Name: HikariCP
+HikariCP-Implementation-Version: 4.0.3
+spring-jdbc-Extension-Name: spring-jdbc
+spring-jdbc-Implementation-Version: 5.3.9
+spring-tx-Extension-Name: spring-tx
+spring-tx-Implementation-Version: 5.3.9
+mybatis-spring-boot-autoconfigure-Extension-Name: mybatis-spring-boot-au
+ toconfigure
+mybatis-spring-boot-autoconfigure-Implementation-Version: 2.2.0
+mybatis-Extension-Name: mybatis
+mybatis-Implementation-Version: 3.5.7
+mybatis-spring-Extension-Name: mybatis-spring
+mybatis-spring-Implementation-Version: 2.0.6
+spring-boot-devtools-Extension-Name: spring-boot-devtools
+spring-boot-devtools-Implementation-Version: 2.5.3
+spring-boot-Extension-Name: spring-boot
+spring-boot-Implementation-Version: 2.5.3
+spring-boot-autoconfigure-Extension-Name: spring-boot-autoconfigure
+spring-boot-autoconfigure-Implementation-Version: 2.5.3
+mysql-connector-java-Extension-Name: mysql-connector-java
+mysql-connector-java-Implementation-Version: 8.0.26
+spring-boot-starter-test-Extension-Name: spring-boot-starter-test
+spring-boot-starter-test-Implementation-Version: 2.5.3
+spring-boot-test-Extension-Name: spring-boot-test
+spring-boot-test-Implementation-Version: 2.5.3
+spring-boot-test-autoconfigure-Extension-Name: spring-boot-test-autoconf
+ igure
+spring-boot-test-autoconfigure-Implementation-Version: 2.5.3
+json-path-Extension-Name: json-path
+json-path-Implementation-Version: 2.5.0
+json-smart-Extension-Name: json-smart
+json-smart-Implementation-Version: 2.4.7
+accessors-smart-Extension-Name: accessors-smart
+accessors-smart-Implementation-Version: 2.4.7
+jakarta_xml_bind-api-Extension-Name: jakarta.xml.bind-api
+jakarta_xml_bind-api-Implementation-Version: 2.3.3
+jakarta_activation-api-Extension-Name: jakarta.activation-api
+jakarta_activation-api-Implementation-Version: 1.2.2
+assertj-core-Extension-Name: assertj-core
+assertj-core-Implementation-Version: 3.19.0
+hamcrest-Extension-Name: hamcrest
+hamcrest-Implementation-Version: 2.2
+junit-jupiter-Extension-Name: junit-jupiter
+junit-jupiter-Implementation-Version: 5.7.2
+junit-jupiter-api-Extension-Name: junit-jupiter-api
+junit-jupiter-api-Implementation-Version: 5.7.2
+apiguardian-api-Extension-Name: apiguardian-api
+apiguardian-api-Implementation-Version: 1.1.0
+opentest4j-Extension-Name: opentest4j
+opentest4j-Implementation-Version: 1.2.0
+junit-platform-commons-Extension-Name: junit-platform-commons
+junit-platform-commons-Implementation-Version: 1.7.2
+junit-jupiter-params-Extension-Name: junit-jupiter-params
+junit-jupiter-params-Implementation-Version: 5.7.2
+junit-jupiter-engine-Extension-Name: junit-jupiter-engine
+junit-jupiter-engine-Implementation-Version: 5.7.2
+junit-platform-engine-Extension-Name: junit-platform-engine
+junit-platform-engine-Implementation-Version: 1.7.2
+mockito-core-Extension-Name: mockito-core
+mockito-core-Implementation-Version: 3.9.0
+byte-buddy-Extension-Name: byte-buddy
+byte-buddy-Implementation-Version: 1.10.22
+byte-buddy-agent-Extension-Name: byte-buddy-agent
+byte-buddy-agent-Implementation-Version: 1.10.22
+objenesis-Extension-Name: objenesis
+objenesis-Implementation-Version: 3.2
+mockito-junit-jupiter-Extension-Name: mockito-junit-jupiter
+mockito-junit-jupiter-Implementation-Version: 3.9.0
+jsonassert-Extension-Name: jsonassert
+jsonassert-Implementation-Version: 1.5.0
+android-json-Extension-Name: android-json
+android-json-Implementation-Version: 0.0.20131108.vaadin1
+spring-core-Extension-Name: spring-core
+spring-core-Implementation-Version: 5.3.9
+spring-jcl-Extension-Name: spring-jcl
+spring-jcl-Implementation-Version: 5.3.9
+spring-test-Extension-Name: spring-test
+spring-test-Implementation-Version: 5.3.9
+xmlunit-core-Extension-Name: xmlunit-core
+xmlunit-core-Implementation-Version: 2.8.2
+maven-wrapper-Extension-Name: maven-wrapper
+maven-wrapper-Implementation-Version: 0.4.0
+spring-cloud-starter-aws-Extension-Name: spring-cloud-starter-aws
+spring-cloud-starter-aws-Implementation-Version: 2.2.6.RELEASE
+spring-cloud-aws-context-Extension-Name: spring-cloud-aws-context
+spring-cloud-aws-context-Implementation-Version: 2.2.6.RELEASE
+spring-cloud-aws-core-Extension-Name: spring-cloud-aws-core
+spring-cloud-aws-core-Implementation-Version: 2.2.6.RELEASE
+aws-java-sdk-core-Extension-Name: aws-java-sdk-core
+aws-java-sdk-core-Implementation-Version: 1.11.792
+httpclient-Extension-Name: httpclient
+httpclient-Implementation-Version: 4.5.13
+httpcore-Extension-Name: httpcore
+httpcore-Implementation-Version: 4.4.14
+commons-codec-Extension-Name: commons-codec
+commons-codec-Implementation-Version: 1.15
+ion-java-Extension-Name: ion-java
+ion-java-Implementation-Version: 1.0.2
+jackson-dataformat-cbor-Extension-Name: jackson-dataformat-cbor
+jackson-dataformat-cbor-Implementation-Version: 2.12.4
+joda-time-Extension-Name: joda-time
+joda-time-Implementation-Version: 2.8.1
+aws-java-sdk-s3-Extension-Name: aws-java-sdk-s3
+aws-java-sdk-s3-Implementation-Version: 1.11.792
+aws-java-sdk-kms-Extension-Name: aws-java-sdk-kms
+aws-java-sdk-kms-Implementation-Version: 1.11.792
+aws-java-sdk-ec2-Extension-Name: aws-java-sdk-ec2
+aws-java-sdk-ec2-Implementation-Version: 1.11.792
+aws-java-sdk-cloudformation-Extension-Name: aws-java-sdk-cloudformation
+aws-java-sdk-cloudformation-Implementation-Version: 1.11.792
+spring-cloud-aws-autoconfigure-Extension-Name: spring-cloud-aws-autoconf
+ igure
+spring-cloud-aws-autoconfigure-Implementation-Version: 2.2.6.RELEASE
+slf4j-api-Extension-Name: slf4j-api
+slf4j-api-Implementation-Version: 1.7.32
+javax_activation-api-Extension-Name: javax.activation-api
+javax_activation-api-Implementation-Version: 1.2.0
+spring-cloud-starter-aws-jdbc-Extension-Name: spring-cloud-starter-aws-j
+ dbc
+spring-cloud-starter-aws-jdbc-Implementation-Version: 2.2.6.RELEASE
+spring-cloud-aws-jdbc-Extension-Name: spring-cloud-aws-jdbc
+spring-cloud-aws-jdbc-Implementation-Version: 2.2.6.RELEASE
+tomcat-jdbc-Extension-Name: tomcat-jdbc
+tomcat-jdbc-Implementation-Version: 9.0.50
+tomcat-juli-Extension-Name: tomcat-juli
+tomcat-juli-Implementation-Version: 9.0.50
+aws-java-sdk-rds-Extension-Name: aws-java-sdk-rds
+aws-java-sdk-rds-Implementation-Version: 1.11.792
+jmespath-java-Extension-Name: jmespath-java
+jmespath-java-Implementation-Version: 1.11.792
+aws-java-sdk-iam-Extension-Name: aws-java-sdk-iam
+aws-java-sdk-iam-Implementation-Version: 1.11.792
+maven-compiler-plugin-Extension-Name: maven-compiler-plugin
+maven-compiler-plugin-Implementation-Version: 3.8.1
+maven-plugin-api-Extension-Name: maven-plugin-api
+maven-plugin-api-Implementation-Version: 3.0
+maven-model-Extension-Name: maven-model
+maven-model-Implementation-Version: 3.0
+sisu-inject-plexus-Extension-Name: sisu-inject-plexus
+sisu-inject-plexus-Implementation-Version: 1.4.2
+sisu-inject-bean-Extension-Name: sisu-inject-bean
+sisu-inject-bean-Implementation-Version: 1.4.2
+sisu-guice-Extension-Name: sisu-guice
+sisu-guice-Implementation-Version: 2.1.7
+maven-artifact-Extension-Name: maven-artifact
+maven-artifact-Implementation-Version: 3.0
+plexus-utils-Extension-Name: plexus-utils
+plexus-utils-Implementation-Version: 2.0.4
+maven-core-Extension-Name: maven-core
+maven-core-Implementation-Version: 3.0
+maven-settings-Extension-Name: maven-settings
+maven-settings-Implementation-Version: 3.0
+maven-settings-builder-Extension-Name: maven-settings-builder
+maven-settings-builder-Implementation-Version: 3.0
+maven-repository-metadata-Extension-Name: maven-repository-metadata
+maven-repository-metadata-Implementation-Version: 3.0
+maven-model-builder-Extension-Name: maven-model-builder
+maven-model-builder-Implementation-Version: 3.0
+maven-aether-provider-Extension-Name: maven-aether-provider
+maven-aether-provider-Implementation-Version: 3.0
+aether-impl-Extension-Name: aether-impl
+aether-impl-Implementation-Version: 1.7
+aether-spi-Extension-Name: aether-spi
+aether-spi-Implementation-Version: 1.7
+aether-api-Extension-Name: aether-api
+aether-api-Implementation-Version: 1.7
+aether-util-Extension-Name: aether-util
+aether-util-Implementation-Version: 1.7
+plexus-interpolation-Extension-Name: plexus-interpolation
+plexus-interpolation-Implementation-Version: 1.14
+plexus-classworlds-Extension-Name: plexus-classworlds
+plexus-classworlds-Implementation-Version: 2.2.3
+plexus-component-annotations-Extension-Name: plexus-component-annotation
+ s
+plexus-component-annotations-Implementation-Version: 1.5.5
+plexus-sec-dispatcher-Extension-Name: plexus-sec-dispatcher
+plexus-sec-dispatcher-Implementation-Version: 1.3
+plexus-cipher-Extension-Name: plexus-cipher
+plexus-cipher-Implementation-Version: 1.4
+maven-shared-utils-Extension-Name: maven-shared-utils
+maven-shared-utils-Implementation-Version: 3.2.1
+commons-io-Extension-Name: commons-io
+commons-io-Implementation-Version: 2.5
+maven-shared-incremental-Extension-Name: maven-shared-incremental
+maven-shared-incremental-Implementation-Version: 1.1
+plexus-java-Extension-Name: plexus-java
+plexus-java-Implementation-Version: 0.9.10
+asm-Extension-Name: asm
+asm-Implementation-Version: 6.2
+qdox-Extension-Name: qdox
+qdox-Implementation-Version: 2.0-M8
+plexus-compiler-api-Extension-Name: plexus-compiler-api
+plexus-compiler-api-Implementation-Version: 2.8.4
+plexus-compiler-manager-Extension-Name: plexus-compiler-manager
+plexus-compiler-manager-Implementation-Version: 2.8.4
+plexus-compiler-javac-Extension-Name: plexus-compiler-javac
+plexus-compiler-javac-Implementation-Version: 2.8.4
 Created-By: Maven Integration for Eclipse
 
