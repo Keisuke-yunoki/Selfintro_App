@@ -50,7 +50,7 @@ Class-Path: lib/spring-boot-starter-thymeleaf-2.5.3.jar lib/spring-boot-
  anager-2.8.4.jar lib/plexus-compiler-javac-2.8.4.jar
 Implementation-Title: SelfintroApp
 Implementation-Version: 0.0.1-SNAPSHOT
-Main-Class: com.example.SelfintroApp
+Main-Class: com.example.selfintroapp.SelfintroApp
 Extension-List: spring-boot-starter-thymeleaf spring-boot-starter spring
  -boot-starter-logging logback-classic logback-core log4j-to-slf4j log4j
  -api jul-to-slf4j jakarta.annotation-api snakeyaml thymeleaf-spring5 th
