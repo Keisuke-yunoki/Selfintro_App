@@ -16,11 +16,11 @@ Class-Path: lib/spring-boot-starter-thymeleaf-2.5.3.jar lib/spring-boot-
  omcat-embed-websocket-9.0.50.jar lib/spring-web-5.3.9.jar lib/spring-be
  ans-5.3.9.jar lib/spring-webmvc-5.3.9.jar lib/spring-aop-5.3.9.jar lib/
  spring-context-5.3.9.jar lib/spring-expression-5.3.9.jar lib/mybatis-sp
- ring-boot-starter-2.2.0.jar lib/spring-boot-starter-jdbc-2.5.3.jar lib/
- HikariCP-4.0.3.jar lib/spring-jdbc-5.3.9.jar lib/spring-tx-5.3.9.jar li
- b/mybatis-spring-boot-autoconfigure-2.2.0.jar lib/mybatis-3.5.7.jar lib
- /mybatis-spring-2.0.6.jar lib/spring-boot-devtools-2.5.3.jar lib/spring
- -boot-2.5.3.jar lib/spring-boot-autoconfigure-2.5.3.jar lib/mysql-conne
+ ring-boot-starter-2.2.0.jar lib/mybatis-spring-boot-autoconfigure-2.2.0
+ .jar lib/mybatis-3.5.7.jar lib/mybatis-spring-2.0.6.jar lib/spring-boot
+ -devtools-2.5.3.jar lib/spring-boot-2.5.3.jar lib/spring-boot-autoconfi
+ gure-2.5.3.jar lib/spring-boot-starter-jdbc-2.5.3.jar lib/HikariCP-4.0.
+ 3.jar lib/spring-jdbc-5.3.9.jar lib/spring-tx-5.3.9.jar lib/mysql-conne
  ctor-java-8.0.26.jar lib/spring-core-5.3.9.jar lib/spring-jcl-5.3.9.jar
   lib/maven-wrapper-0.4.0.jar lib/spring-cloud-starter-aws-2.2.6.RELEASE
  .jar lib/spring-cloud-aws-context-2.2.6.RELEASE.jar lib/spring-cloud-aw
@@ -61,9 +61,9 @@ Extension-List: spring-boot-starter-thymeleaf spring-boot-starter spring
  le-parameter-names spring-boot-starter-tomcat tomcat-embed-core tomcat-
  embed-el tomcat-embed-websocket spring-web spring-beans spring-webmvc s
  pring-aop spring-context spring-expression mybatis-spring-boot-starter 
- spring-boot-starter-jdbc HikariCP spring-jdbc spring-tx mybatis-spring-
- boot-autoconfigure mybatis mybatis-spring spring-boot-devtools spring-b
- oot spring-boot-autoconfigure mysql-connector-java spring-core spring-j
+ mybatis-spring-boot-autoconfigure mybatis mybatis-spring spring-boot-de
+ vtools spring-boot spring-boot-autoconfigure spring-boot-starter-jdbc H
+ ikariCP spring-jdbc spring-tx mysql-connector-java spring-core spring-j
  cl maven-wrapper spring-cloud-starter-aws spring-cloud-aws-context spri
  ng-cloud-aws-core aws-java-sdk-core httpclient httpcore commons-codec i
  on-java jackson-dataformat-cbor joda-time aws-java-sdk-s3 aws-java-sdk-
@@ -148,14 +148,6 @@ spring-expression-Extension-Name: spring-expression
 spring-expression-Implementation-Version: 5.3.9
 mybatis-spring-boot-starter-Extension-Name: mybatis-spring-boot-starter
 mybatis-spring-boot-starter-Implementation-Version: 2.2.0
-spring-boot-starter-jdbc-Extension-Name: spring-boot-starter-jdbc
-spring-boot-starter-jdbc-Implementation-Version: 2.5.3
-HikariCP-Extension-Name: HikariCP
-HikariCP-Implementation-Version: 4.0.3
-spring-jdbc-Extension-Name: spring-jdbc
-spring-jdbc-Implementation-Version: 5.3.9
-spring-tx-Extension-Name: spring-tx
-spring-tx-Implementation-Version: 5.3.9
 mybatis-spring-boot-autoconfigure-Extension-Name: mybatis-spring-boot-au
  toconfigure
 mybatis-spring-boot-autoconfigure-Implementation-Version: 2.2.0
@@ -169,6 +161,14 @@ spring-boot-Extension-Name: spring-boot
 spring-boot-Implementation-Version: 2.5.3
 spring-boot-autoconfigure-Extension-Name: spring-boot-autoconfigure
 spring-boot-autoconfigure-Implementation-Version: 2.5.3
+spring-boot-starter-jdbc-Extension-Name: spring-boot-starter-jdbc
+spring-boot-starter-jdbc-Implementation-Version: 2.5.3
+HikariCP-Extension-Name: HikariCP
+HikariCP-Implementation-Version: 4.0.3
+spring-jdbc-Extension-Name: spring-jdbc
+spring-jdbc-Implementation-Version: 5.3.9
+spring-tx-Extension-Name: spring-tx
+spring-tx-Implementation-Version: 5.3.9
 mysql-connector-java-Extension-Name: mysql-connector-java
 mysql-connector-java-Implementation-Version: 8.0.26
 spring-boot-starter-test-Extension-Name: spring-boot-starter-test
