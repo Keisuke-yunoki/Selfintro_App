@@ -110,7 +110,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>SelfintroAppApplication</mainClass>
+                <mainClass>com.example.SelfintroApp</mainClass>
                 <addClasspath>true</addClasspath>
                 <addExtensions>true</addExtensions>
                 <classpathPrefix>lib</classpathPrefix>
