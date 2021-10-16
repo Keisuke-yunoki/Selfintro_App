@@ -29,6 +29,7 @@ logging:
       amazonaws:
         util:
           EC2MetadataUtils: error
+          EC2ResourceFetcher: error
 
 spring.mvc.hiddenmethod.filter.enabled: true
 mybatis:
