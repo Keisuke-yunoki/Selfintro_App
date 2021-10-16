@@ -32,8 +32,6 @@ logging:
           EC2ResourceFetcher: error
 
 spring.mvc.hiddenmethod.filter.enabled: true
-mybatis:
-  mapper-locations: classpath*:/src/main/resources/com/example/selfintroapp/mapper/SelfintroAppMapper.xml
 
 server:
     port: 58080
