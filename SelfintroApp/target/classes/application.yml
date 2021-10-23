@@ -25,5 +25,11 @@ cloud:
 
 spring.mvc.hiddenmethod.filter.enabled: true
 
+
+logging:
+  level:
+    root: DEBUG
+    
+
 server:
     port: 58080
