@@ -4,7 +4,11 @@ spring:
     url: jdbc:mysql://db-java-portfolio-01.c9g8ky3xvz4n.ap-northeast-1.rds.amazonaws.com:3306/selfintroapp
     username: admin
     password: Pass4649
-    driver-class-name: com.mysql.cj.jdbc.Driver  
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+    
+    
+    
     
   sql:
     init:
@@ -24,7 +28,7 @@ cloud:
       static: ap-northeast-1
 
 spring.mvc.hiddenmethod.filter.enabled: true
-
+spring.mvc.log-request-details: true
 
 logging:
   level:
