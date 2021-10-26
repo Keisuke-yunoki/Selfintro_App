@@ -82,6 +82,7 @@
   </dependencies>
   
   <build>
+    <finalName>SelfintroApp</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
