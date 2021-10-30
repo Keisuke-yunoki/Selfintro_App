@@ -1,5 +1,7 @@
 package com.example.selfintroapp.controller;
 
+import javax.servlet.http.HttpServlet;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +18,7 @@ import com.example.selfintroapp.service.SelfintroAppService;
 
 @Controller
 @RequestMapping("/appdatas")
-public class SelfintroAppController {
+public class SelfintroAppController extends HttpServlet{
 	
 	@Autowired
 	SelfintroAppService service;
