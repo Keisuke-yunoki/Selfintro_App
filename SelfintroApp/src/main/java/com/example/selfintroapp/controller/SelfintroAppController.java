@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.selfintroapp.domain.Appdata;
 import com.example.selfintroapp.service.SelfintroAppService;
 
+
 @Controller
 @RequestMapping("/appdatas")
 public class SelfintroAppController {
